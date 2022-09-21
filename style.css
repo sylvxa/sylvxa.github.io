@@ -1,0 +1,101 @@
+body {
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.trans {
+	background: linear-gradient(0deg, #5ccefa, #5ccefa 20%, #f6a8b7 20%, #f6a8b7 40%, #FFF 40%, #FFF 60%, #f6a8b7 60%, #f6a8b7 80%, #5ccefa 80%, #5ccefa );
+}
+
+.lesbian {
+    background: linear-gradient(
+		180deg,
+		#d12601,
+		#d12601 20%,
+		#ff8f45 20%,
+		#ff8f45 40%,
+		#fff 40%,
+		#fff 60%,
+		#cf559b 60%,
+		#cf559b 80%,
+		#9b1a58 80%,
+		#9b1a58
+		);
+}
+
+.asexual {
+	background: linear-gradient(
+		to bottom,
+		#000,
+		#000 25%,
+		#a3a3a3 25%,
+		#a3a3a3 50%,
+		#fff 50%,
+		#fff 75%,
+		#820080 75%,
+		#820080
+		);
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    border-bottom: 10px white solid;
+}
+
+h1:nth-of-type(1) {
+    position: absolute;
+    top: 37%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    font-size: 7.5vw;
+}
+
+h2:nth-of-type(1) {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+    font-size: 2.4vw;
+    text-align: center;
+}
+
+.lesbian img {
+    position: absolute;
+    width: auto;
+    height: 50%;
+    left: 15%;
+    top: 50%;
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
+    border-radius: 100%;
+    outline: 5px white solid;
+}
+
+.lesbian span {
+    position: absolute;
+    font-size: 7.5vw;
+    position: absolute;
+    right: 5%;
+    top: 40%;
+    mix-blend-mode: difference;
+}
+
+.asexual h1 {
+    font-size: 2vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    mix-blend-mode: difference;
+}
+
+.asexual a {
+    color: white;
+    text-decoration: none;
+}
