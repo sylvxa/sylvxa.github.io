@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>br3w3d</title>
+</head>
+<body>
+    <h1>drag <a href="">c0ldbr3w</a> to the bookmarks bar.</h1>
+    <a href="https://chrome.google.com/webstore/category/extensions">Chrome Web Store</a>
+    <script>
+        document.querySelector("a").href = `javascript:let html='<h1>welcome to c0ldbr3w!</h1>    <h2>made by sylvxa - 2022</h2>    <p>    pick the extension you would like to toggle and click submit! <br>    sylvxa nor any parties involved with the making of this tool are responsible for any damages caused by the tool. <br>    this is for educational purposes only. <br>    </p>    <select name="Extensions" id="extension-select">    </select>    <button>toggle</button>',style="<style>        body {            background:#27241d;            margin: 16px;        }            * {            font-family: monospace;            color:white;            line-height: 12px;        }            select {            border: none;            background: #423D33;            outline: none;        }        button {            border: none;            background: #423D33;            outline: none;            padding: 2.5px;        }    </style>";document.head.innerHTML=style,document.body.innerHTML=html;let select=document.getElementById("extension-select");chrome.management.getAll(function(e){e.forEach(e=>{let t=document.createElement("option");t.innerText=e.name,t.value=e.id,select.appendChild(t)})}),document.querySelector("button").addEventListener("click",e=>{chrome.management.get(select.value,e=>{e.enabled?chrome.management.setEnabled(e.id,!1):chrome.management.setEnabled(e.id,!0)})});`;
+    </script>
+</body>
+</html>
